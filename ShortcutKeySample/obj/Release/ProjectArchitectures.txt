@@ -1,0 +1,2 @@
+C:\Users\Ryota\documents\visual studio 2013\Projects\ShortcutKeySample\ShortcutKey\ShortcutKey.csproj;neutral
+C:\Users\Ryota\documents\visual studio 2013\Projects\ShortcutKeySample\ShortcutKeySample\ShortcutKeySample.csproj;neutral
