@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-12-21T09:43:54.273</Modified>
+      <Modified>2014-12-21T10:51:01.289</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\bin\Debug\ShortcutKeySample.exe">
       <PackagePath>ShortcutKeySample.exe</PackagePath>
-      <Modified>2014-12-21T10:18:22.785</Modified>
+      <Modified>2014-12-21T10:51:47.768</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -54,7 +54,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\bin\Debug\ShortcutKey.dll">
       <PackagePath>ShortcutKey.dll</PackagePath>
-      <Modified>2014-12-21T10:17:55.375</Modified>
+      <Modified>2014-12-21T10:51:47.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -78,19 +78,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-12-21T09:43:53.580</Modified>
+      <Modified>2014-12-21T10:51:00.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-12-21T10:18:22.522</Modified>
+      <Modified>2014-12-21T10:51:00.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\bin\Debug\ShortcutKeySample.xr.xml">
       <PackagePath>ShortcutKeySample.xr.xml</PackagePath>
-      <Modified>2014-12-21T10:18:22.491</Modified>
+      <Modified>2014-12-21T10:39:48.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-12-21T10:17:57.295</Modified>
+      <Modified>2014-12-21T10:51:48.018</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

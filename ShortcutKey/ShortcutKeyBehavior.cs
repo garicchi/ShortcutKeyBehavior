@@ -12,10 +12,50 @@ using Windows.UI.Xaml;
 
 namespace ShortcutKey
 {
+    public class PressedKeyList
+    {
+        private static PressedKeyList _instance=null;
+
+        public List<VirtualKey> PressedDic { get; set; }
+        private PressedKeyList()
+        {
+            PressedDic = new List<VirtualKey>();
+        }
+
+        public static PressedKeyList GetInstance()
+        {
+            if (_instance == null)
+            {
+                return new PressedKeyList();
+            }
+            else
+            {
+                return _instance;
+            }
+        }
+
+        public void SetKeyDown(VirtualKey key)
+        {
+            if (!PressedDic.Contains(key))
+            {
+                PressedDic.Add(key);
+            }
+        }
+
+        public void SetKeyUp(VirtualKey key)
+        {
+            if (PressedDic.Contains(key))
+            {
+                PressedDic.Remove(key);
+            }
+        }
+
+    }
     public class ShortcutKeyBehavior:DependencyObject,IBehavior
     {
         public event EventHandler OnShortcutDown;
 
+        private PressedKeyList _pressedKeyList;
         public VirtualKey Key
         {
             get { return (VirtualKey)GetValue(KeyProperty); }
@@ -77,7 +117,7 @@ namespace ShortcutKey
         public ShortcutKeyBehavior()
         {
             _isPressed = false;
-            
+            _pressedKeyList = PressedKeyList.GetInstance();
         }
 
         //ビヘイビアとして適用されるコントロールが入る
@@ -98,11 +138,21 @@ namespace ShortcutKey
         {
             this.associatedObject = null;
             Dispatcher.AcceleratorKeyActivated -= OnKeyActivated;
+
+            
         }
 
         private void OnKeyActivated(CoreDispatcher dispatcher,AcceleratorKeyEventArgs e)
         {
-            
+            if (e.EventType == CoreAcceleratorKeyEventType.KeyDown)
+            {
+                _pressedKeyList.SetKeyDown(e.VirtualKey);
+            }
+            else if(e.EventType==CoreAcceleratorKeyEventType.KeyUp) 
+            {
+                _pressedKeyList.SetKeyUp(e.VirtualKey);
+            }
+
             if (e.EventType == CoreAcceleratorKeyEventType.KeyDown&&e.VirtualKey==Key&&_isPressed==false)
             {
                 var modi1State = Window.Current.CoreWindow.GetKeyState(ModifierKey1);
@@ -111,7 +161,7 @@ namespace ShortcutKey
                 bool isModi1On = (modi1State == (CoreVirtualKeyStates.Down | CoreVirtualKeyStates.Locked) || modi1State == CoreVirtualKeyStates.Down);
                 bool isModi2On = (modi2State == (CoreVirtualKeyStates.Down | CoreVirtualKeyStates.Locked) || modi2State == CoreVirtualKeyStates.Down);
             
-                if (ModifierKey1 != VirtualKey.None && ModifierKey2 != VirtualKey.None && Key != VirtualKey.None)
+                if (ModifierKey1 != VirtualKey.None && ModifierKey2 != VirtualKey.None && Key != VirtualKey.None&&_pressedKeyList.PressedDic.Count==3)
                 {
                     //2つの修飾キーと1つめの修飾キーがある場合
                     if (isModi1On && isModi2On && e.VirtualKey == Key)
@@ -120,7 +170,7 @@ namespace ShortcutKey
                         
                     }
                 }
-                else if (ModifierKey1 != VirtualKey.None && ModifierKey2 == VirtualKey.None && Key != VirtualKey.None)
+                else if (ModifierKey1 != VirtualKey.None && ModifierKey2 == VirtualKey.None && Key != VirtualKey.None && _pressedKeyList.PressedDic.Count == 2)
                 {
                     //1つめの修飾キーがある場合
                     if (isModi1On && e.VirtualKey == Key)
@@ -129,7 +179,7 @@ namespace ShortcutKey
                         
                     }
                 }
-                else if (ModifierKey1 == VirtualKey.None && ModifierKey2 == VirtualKey.None && Key != VirtualKey.None)
+                else if (ModifierKey1 == VirtualKey.None && ModifierKey2 == VirtualKey.None && Key != VirtualKey.None && _pressedKeyList.PressedDic.Count == 1)
                 {
                     //2つの修飾キーがない場合(キーのみ)
                     if (e.VirtualKey == Key)
@@ -168,5 +218,7 @@ namespace ShortcutKey
                 OnShortcutDown(this,new EventArgs());
             }
         }
+
+        
     }
 }

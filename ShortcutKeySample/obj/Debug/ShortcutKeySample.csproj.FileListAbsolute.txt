@@ -118,3 +118,11 @@ C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\obj\Debug\qualifie
 C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\obj\Debug\GalaSoft.MvvmLight.Platform.pri.xml
 C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\obj\Debug\ProjectArchitectures.txt
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles.intermediate
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\obj\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\obj\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles.intermediate
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\obj\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\obj\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles.intermediate
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\obj\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKeySample\obj\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml.intermediate
