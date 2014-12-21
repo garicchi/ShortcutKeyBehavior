@@ -9,13 +9,13 @@
     mc:Ignorable="d">
 
 	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		
-		
-		<Interactivity:Interaction.Behaviors>
-			<ShortcutKey:ShortcutKeyBehavior Key="A" ModifierKey1="Control" ModifierKey2="Shift" Command="{Binding HogeCommand}" CommandParameter="hoge" />
-			<ShortcutKey:ShortcutKeyBehavior Key="A" ModifierKey1="Control" Command="{Binding HogeCommand1}"/>
-		</Interactivity:Interaction.Behaviors>
-		
-		
-	</Grid>
+
+        <Interactivity:Interaction.Behaviors>
+            <ShortcutKey:ShortcutKeyBehavior x:Name="shortcut1" Key="A" ModifierKey1="Control" ModifierKey2="Shift" Command="{Binding HogeCommand}" CommandParameter="hoge" OnShortcutDown="shortcut1_OnShortcutDown" />
+            <ShortcutKey:ShortcutKeyBehavior Key="A" ModifierKey1="Control" Command="{Binding HogeCommand1}"/>
+        </Interactivity:Interaction.Behaviors>
+
+
+
+    </Grid>
 </Page>

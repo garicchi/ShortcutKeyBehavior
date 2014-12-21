@@ -26,6 +26,7 @@
       <RootProperty Name="ModifierKey2" />
       <RootProperty Name="Command" />
       <RootProperty Name="CommandParameter" />
+      <RootEvent Name="OnShortcutDown" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="ShortcutKeySample.MainPage" />

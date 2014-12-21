@@ -50,5 +50,10 @@ namespace ShortcutKeySample
             
 
         }
+
+        private void shortcut1_OnShortcutDown(object sender, EventArgs e)
+        {
+            Debug.WriteLine("Event!");
+        }
     }
 }

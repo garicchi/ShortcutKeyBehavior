@@ -16,3 +16,21 @@ C:\Users\Ryota\documents\visual studio 2013\Projects\ShortcutKeySample\ShortcutK
 C:\Users\Ryota\documents\visual studio 2013\Projects\ShortcutKeySample\ShortcutKey\obj\Release\qualifiers.txt
 C:\Users\Ryota\documents\visual studio 2013\Projects\ShortcutKeySample\ShortcutKey\obj\Release\qualifiers.txt.intermediate
 C:\Users\Ryota\documents\visual studio 2013\Projects\ShortcutKeySample\ShortcutKey\obj\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\bin\Release\ShortcutKey.dll
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\bin\Release\ShortcutKey.pdb
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\bin\Release\ShortcutKey.pri
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\bin\Release\Microsoft.Xaml.Interactions.dll
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\bin\Release\Microsoft.Xaml.Interactivity.dll
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\obj\Release\ShortcutKey.dll
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\obj\Release\ShortcutKey.pdb
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\obj\Release\priconfig.xml
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\obj\Release\priconfig.xml.intermediate
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\obj\Release\layout.resfiles
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\obj\Release\layout.resfiles.intermediate
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\obj\Release\resources.resfiles
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\obj\Release\resources.resfiles.intermediate
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\obj\Release\pri.resfiles
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\obj\Release\pri.resfiles.intermediate
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\obj\Release\qualifiers.txt
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\obj\Release\qualifiers.txt.intermediate
+C:\Users\Ryota\Projects\ShortcutKeyBehavior\ShortcutKey\obj\Release\MultipleQualifiersPerDimensionFound.txt

@@ -14,6 +14,7 @@ namespace ShortcutKey
 {
     public class ShortcutKeyBehavior:DependencyObject,IBehavior
     {
+        public event EventHandler OnShortcutDown;
 
         public VirtualKey Key
         {
@@ -76,6 +77,7 @@ namespace ShortcutKey
         public ShortcutKeyBehavior()
         {
             _isPressed = false;
+            
         }
 
         //ビヘイビアとして適用されるコントロールが入る
@@ -159,6 +161,11 @@ namespace ShortcutKey
             if (Command != null)
             {
                 Command.Execute(CommandParameter);
+            }
+
+            if(OnShortcutDown!=null)
+            {
+                OnShortcutDown(this,new EventArgs());
             }
         }
     }
