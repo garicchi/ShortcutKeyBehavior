@@ -1,0 +1,2 @@
+C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehavior\ShortcutKeyBehavior.csproj;x86
+C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\ShortcutKeyBehaviorSample.csproj;x86

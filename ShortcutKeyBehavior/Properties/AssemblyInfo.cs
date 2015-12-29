@@ -2,27 +2,27 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-// アセンブリに関する情報は、次の属性のセットを通して制御されます。
-// アセンブリに関連付けられている情報を変更するには、
-// これらの属性値を変更してください。
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
 [assembly: AssemblyTitle("ShortcutKeyBehavior")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ShortcutKeyBehavior")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-// アセンブリのバージョン情報は、以下の 4 つの値で構成されています:
+// Version information for an assembly consists of the following four values:
 //
-//      メジャー バージョン
-//      マイナー バージョン 
-//      ビルド番号
-//      リビジョン
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
 //
-// すべての値を指定するか、以下のように '*' を使用してビルドおよびリビジョン番号を
-// 既定値にすることができます:
+// You can specify all the values or you can default the Build and Revision Numbers 
+// by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
