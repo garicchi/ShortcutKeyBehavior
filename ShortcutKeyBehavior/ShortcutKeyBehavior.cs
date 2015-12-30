@@ -9,6 +9,9 @@ using System.Windows.Input;
 using Windows.System;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
+using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Markup;
+using Windows.UI.Xaml.Media;
 
 namespace ShortcutKey
 {
@@ -51,6 +54,8 @@ namespace ShortcutKey
         }
 
     }
+
+    [ContentProperty(Name = "Actions")]
     public class ShortcutKeyBehavior:DependencyObject,IBehavior
     {
         public event EventHandler OnShortcutDown;
@@ -90,28 +95,26 @@ namespace ShortcutKey
         public static readonly DependencyProperty ModifierKey2Property =
             DependencyProperty.Register("ModifierKey2", typeof(VirtualKey), typeof(ShortcutKeyBehavior), new PropertyMetadata(VirtualKey.None));
 
-        
 
-        public ICommand Command
+        public ActionCollection Actions
         {
-            get { return (ICommand)GetValue(CommandProperty); }
-            set { SetValue(CommandProperty, value); }
+            get
+            {
+                var actions = (ActionCollection)GetValue(ActionsProperty);
+                if (actions == null)
+                {
+                    actions = new ActionCollection();
+                    SetValue(ActionsProperty, actions);
+                }
+                return actions;
+
+            }
         }
 
-        // Using a DependencyProperty as the backing store for Command.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty CommandProperty =
-            DependencyProperty.Register("Command", typeof(ICommand), typeof(ShortcutKeyBehavior), new PropertyMetadata(null));
+        // Using a DependencyProperty as the backing store for Actions.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty ActionsProperty =
+            DependencyProperty.Register("Actions", typeof(ActionCollection), typeof(ShortcutKeyBehavior), new PropertyMetadata(null));
 
-
-        public object CommandParameter
-        {
-            get { return (object)GetValue(CommandParameterProperty); }
-            set { SetValue(CommandParameterProperty, value); }
-        }
-
-        // Using a DependencyProperty as the backing store for CommandParameter.  This enables animation, styling, binding, etc...
-        public static readonly DependencyProperty CommandParameterProperty =
-            DependencyProperty.Register("CommandParameter", typeof(object), typeof(ShortcutKeyBehavior), new PropertyMetadata(null));
 
         private bool _isPressed;
         private bool _isFocus;
@@ -120,6 +123,7 @@ namespace ShortcutKey
             _isPressed = false;
             _isFocus = false;
             _pressedKeyList = PressedKeyList.GetInstance();
+            
         }
 
         //ビヘイビアとして適用されるコントロールが入る
@@ -137,6 +141,8 @@ namespace ShortcutKey
             element.LostFocus += Element_LostFocus;
             element.Unloaded += Element_Unloaded;
             element.PointerPressed += Element_PointerPressed;
+            //this.DataContext = element.DataContext;
+            
             Dispatcher.AcceleratorKeyActivated += OnKeyActivated;
         }
 
@@ -238,11 +244,8 @@ namespace ShortcutKey
 
         private void CommandExecute()
         {
-            if (Command != null)
-            {
-                Command.Execute(CommandParameter);
-            }
-
+            Interaction.ExecuteActions(AssociatedObject, Actions, null);
+            
             if(OnShortcutDown!=null)
             {
                 OnShortcutDown(this,new EventArgs());

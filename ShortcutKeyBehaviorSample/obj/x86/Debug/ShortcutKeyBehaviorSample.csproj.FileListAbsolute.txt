@@ -142,9 +142,6 @@ C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBeh
 C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\bin\x86\Debug\ShortcutKeyBehavior.dll
-C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\bin\x86\Debug\ShortcutKeyBehavior.pdb
-C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\bin\x86\Debug\ShortcutKeyBehavior.pri
 C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\obj\x86\Debug\XamlTypeInfo.g.cs
 C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\obj\x86\Debug\ShortcutKeyBehaviorSample.exe
@@ -218,3 +215,6 @@ C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBeh
 C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml
 C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\bin\x86\Debug\KeyTriggerBehavior.dll
+C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\bin\x86\Debug\KeyTriggerBehavior.pdb
+C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\bin\x86\Debug\KeyTriggerBehavior.pri

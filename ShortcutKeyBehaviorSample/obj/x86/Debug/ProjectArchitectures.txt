@@ -1,2 +1,2 @@
-C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehavior\ShortcutKeyBehavior.csproj;neutral
+C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\KeyTriggerBehavior\KeyTriggerBehavior.csproj;neutral
 C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\ShortcutKeyBehaviorSample.csproj;x86

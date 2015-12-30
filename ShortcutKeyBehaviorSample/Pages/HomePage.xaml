@@ -5,7 +5,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     
-    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" xmlns:ShortcutKey="using:ShortcutKey"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity" 
+    xmlns:Behaviors="using:Behaviors"
+    
     xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
     x:Class="ShortcutKeyBehaviorSample.Pages.HomePage"
     
@@ -21,20 +23,28 @@
 
 
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:Name="grid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="48"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        
         <Interactivity:Interaction.Behaviors>
-            <ShortcutKey:ShortcutKeyBehavior Command="{Binding SumCommand}" Key="A"/>
+            <Behaviors:KeyTriggerBehavior Key="A" ModifierKey1="Control" OnShortcutDown="KeyTriggerBehavior_OnShortcutDown">
+            </Behaviors:KeyTriggerBehavior>
         </Interactivity:Interaction.Behaviors>
+        
         <Grid Grid.Row="0">
             <TextBlock Text="ホーム" VerticalAlignment="Center" FontSize="24" Padding="10,0,0,0" />
 
         </Grid>
         <Grid Grid.Row="1">
+            <Interactivity:Interaction.Behaviors>
+                <Core:EventTriggerBehavior>
+                    <Core:InvokeCommandAction Command="{Binding SubCommand}"/>
+                </Core:EventTriggerBehavior>
+            </Interactivity:Interaction.Behaviors>
 
 
 

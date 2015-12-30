@@ -29,6 +29,9 @@ namespace ShortcutKeyBehaviorSample.Pages
             this.InitializeComponent();
         }
 
+        private void KeyTriggerBehavior_OnShortcutDown(object sender, EventArgs e)
+        {
 
+        }
     }
 }

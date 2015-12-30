@@ -351,8 +351,8 @@
     <AppxPackagedFile Include="C:\Users\garicchi\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehavior\bin\Debug\ShortcutKeyBehavior.dll">
-      <PackagePath>ShortcutKeyBehavior.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\KeyTriggerBehavior\bin\Debug\KeyTriggerBehavior.dll">
+      <PackagePath>KeyTriggerBehavior.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>

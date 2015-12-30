@@ -156,15 +156,15 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ShortcutKeyBehavior\ShortcutKeyBehavior.csproj">
-      <Project>{750e1c3e-fbd5-46dc-8ba7-6f43d647a57f}</Project>
-      <Name>ShortcutKeyBehavior</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <SDKReference Include="BehaviorsXamlSDKManaged, Version=12.0">
       <Name>Behaviors SDK %28XAML%29</Name>
     </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KeyTriggerBehavior\KeyTriggerBehavior.csproj">
+      <Project>{9eac4453-83cb-49fe-a2d7-da2e89c1421d}</Project>
+      <Name>KeyTriggerBehavior</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

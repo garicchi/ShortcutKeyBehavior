@@ -132,7 +132,7 @@ namespace ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[20];
+            _typeNameTable = new string[25];
             _typeNameTable[0] = "ShortcutKeyBehaviorSample.Commons.ViewModelLocator";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "ShortcutKeyBehaviorSample.ViewModels.MainViewModel";
@@ -145,16 +145,21 @@ namespace ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo
             _typeNameTable[9] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
             _typeNameTable[10] = "Windows.UI.Xaml.DependencyObjectCollection";
             _typeNameTable[11] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[12] = "ShortcutKey.ShortcutKeyBehavior";
-            _typeNameTable[13] = "System.Windows.Input.ICommand";
+            _typeNameTable[12] = "Behaviors.KeyTriggerBehavior";
+            _typeNameTable[13] = "Microsoft.Xaml.Interactivity.ActionCollection";
             _typeNameTable[14] = "Windows.System.VirtualKey";
             _typeNameTable[15] = "System.Enum";
             _typeNameTable[16] = "System.ValueType";
-            _typeNameTable[17] = "ShortcutKeyBehaviorSample.Pages.HomePage";
-            _typeNameTable[18] = "ShortcutKeyBehaviorSample.Pages.MainPage";
-            _typeNameTable[19] = "ShortcutKeyBehaviorSample.Pages.SettingPage";
+            _typeNameTable[17] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[18] = "String";
+            _typeNameTable[19] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
+            _typeNameTable[20] = "System.Windows.Input.ICommand";
+            _typeNameTable[21] = "Windows.UI.Xaml.Data.IValueConverter";
+            _typeNameTable[22] = "ShortcutKeyBehaviorSample.Pages.HomePage";
+            _typeNameTable[23] = "ShortcutKeyBehaviorSample.Pages.MainPage";
+            _typeNameTable[24] = "ShortcutKeyBehaviorSample.Pages.SettingPage";
 
-            _typeTable = new global::System.Type[20];
+            _typeTable = new global::System.Type[25];
             _typeTable[0] = typeof(global::ShortcutKeyBehaviorSample.Commons.ViewModelLocator);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::ShortcutKeyBehaviorSample.ViewModels.MainViewModel);
@@ -167,14 +172,19 @@ namespace ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo
             _typeTable[9] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
             _typeTable[10] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
             _typeTable[11] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[12] = typeof(global::ShortcutKey.ShortcutKeyBehavior);
-            _typeTable[13] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[12] = typeof(global::Behaviors.KeyTriggerBehavior);
+            _typeTable[13] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
             _typeTable[14] = typeof(global::Windows.System.VirtualKey);
             _typeTable[15] = typeof(global::System.Enum);
             _typeTable[16] = typeof(global::System.ValueType);
-            _typeTable[17] = typeof(global::ShortcutKeyBehaviorSample.Pages.HomePage);
-            _typeTable[18] = typeof(global::ShortcutKeyBehaviorSample.Pages.MainPage);
-            _typeTable[19] = typeof(global::ShortcutKeyBehaviorSample.Pages.SettingPage);
+            _typeTable[17] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[18] = typeof(global::System.String);
+            _typeTable[19] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
+            _typeTable[20] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[21] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
+            _typeTable[22] = typeof(global::ShortcutKeyBehaviorSample.Pages.HomePage);
+            _typeTable[23] = typeof(global::ShortcutKeyBehaviorSample.Pages.MainPage);
+            _typeTable[24] = typeof(global::ShortcutKeyBehaviorSample.Pages.SettingPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -214,11 +224,20 @@ namespace ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo
         private object Activate_4_ObservableObject() { return new global::GalaSoft.MvvmLight.ObservableObject(); }
         private object Activate_5_FavoritePage() { return new global::ShortcutKeyBehaviorSample.Pages.FavoritePage(); }
         private object Activate_9_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_12_ShortcutKeyBehavior() { return new global::ShortcutKey.ShortcutKeyBehavior(); }
-        private object Activate_17_HomePage() { return new global::ShortcutKeyBehaviorSample.Pages.HomePage(); }
-        private object Activate_18_MainPage() { return new global::ShortcutKeyBehaviorSample.Pages.MainPage(); }
-        private object Activate_19_SettingPage() { return new global::ShortcutKeyBehaviorSample.Pages.SettingPage(); }
+        private object Activate_12_KeyTriggerBehavior() { return new global::Behaviors.KeyTriggerBehavior(); }
+        private object Activate_13_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_17_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_19_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
+        private object Activate_22_HomePage() { return new global::ShortcutKeyBehaviorSample.Pages.HomePage(); }
+        private object Activate_23_MainPage() { return new global::ShortcutKeyBehaviorSample.Pages.MainPage(); }
+        private object Activate_24_SettingPage() { return new global::ShortcutKeyBehaviorSample.Pages.SettingPage(); }
         private void VectorAdd_9_BehaviorCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
+            var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_13_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
@@ -301,20 +320,21 @@ namespace ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo
                 xamlType = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  ShortcutKey.ShortcutKeyBehavior
+            case 12:   //  Behaviors.KeyTriggerBehavior
                 userType = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_12_ShortcutKeyBehavior;
-                userType.AddMemberName("Command");
+                userType.Activator = Activate_12_KeyTriggerBehavior;
+                userType.SetContentPropertyName("Behaviors.KeyTriggerBehavior.Actions");
+                userType.AddMemberName("Actions");
                 userType.AddMemberName("Key");
                 userType.AddMemberName("ModifierKey1");
                 userType.AddMemberName("ModifierKey2");
-                userType.AddMemberName("CommandParameter");
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 13:   //  System.Windows.Input.ICommand
-                userType = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+            case 13:   //  Microsoft.Xaml.Interactivity.ActionCollection
+                userType = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
+                userType.CollectionAdd = VectorAdd_13_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
@@ -504,23 +524,59 @@ namespace ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 17:   //  ShortcutKeyBehaviorSample.Pages.HomePage
+            case 17:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+                userType = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_17_EventTriggerBehavior;
+                userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions");
+                userType.AddMemberName("Actions");
+                userType.AddMemberName("EventName");
+                userType.AddMemberName("SourceObject");
+                userType.AddMemberName("AssociatedObject");
+                xamlType = userType;
+                break;
+
+            case 18:   //  String
+                xamlType = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 19:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
+                userType = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_19_InvokeCommandAction;
+                userType.AddMemberName("Command");
+                userType.AddMemberName("CommandParameter");
+                userType.AddMemberName("InputConverter");
+                userType.AddMemberName("InputConverterParameter");
+                userType.AddMemberName("InputConverterLanguage");
+                xamlType = userType;
+                break;
+
+            case 20:   //  System.Windows.Input.ICommand
+                userType = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 21:   //  Windows.UI.Xaml.Data.IValueConverter
+                xamlType = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 22:   //  ShortcutKeyBehaviorSample.Pages.HomePage
                 userType = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_HomePage;
+                userType.Activator = Activate_22_HomePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  ShortcutKeyBehaviorSample.Pages.MainPage
+            case 23:   //  ShortcutKeyBehaviorSample.Pages.MainPage
                 userType = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_MainPage;
+                userType.Activator = Activate_23_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  ShortcutKeyBehaviorSample.Pages.SettingPage
+            case 24:   //  ShortcutKeyBehaviorSample.Pages.SettingPage
                 userType = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_SettingPage;
+                userType.Activator = Activate_24_SettingPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -542,60 +598,125 @@ namespace ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_2_ShortcutKeyBehavior_Command(object instance)
+        private object get_2_KeyTriggerBehavior_Actions(object instance)
         {
-            var that = (global::ShortcutKey.ShortcutKeyBehavior)instance;
-            return that.Command;
+            var that = (global::Behaviors.KeyTriggerBehavior)instance;
+            return that.Actions;
         }
-        private void set_2_ShortcutKeyBehavior_Command(object instance, object Value)
+        private object get_3_KeyTriggerBehavior_Key(object instance)
         {
-            var that = (global::ShortcutKey.ShortcutKeyBehavior)instance;
-            that.Command = (global::System.Windows.Input.ICommand)Value;
-        }
-        private object get_3_ShortcutKeyBehavior_Key(object instance)
-        {
-            var that = (global::ShortcutKey.ShortcutKeyBehavior)instance;
+            var that = (global::Behaviors.KeyTriggerBehavior)instance;
             return that.Key;
         }
-        private void set_3_ShortcutKeyBehavior_Key(object instance, object Value)
+        private void set_3_KeyTriggerBehavior_Key(object instance, object Value)
         {
-            var that = (global::ShortcutKey.ShortcutKeyBehavior)instance;
+            var that = (global::Behaviors.KeyTriggerBehavior)instance;
             that.Key = (global::Windows.System.VirtualKey)Value;
         }
-        private object get_4_ShortcutKeyBehavior_ModifierKey1(object instance)
+        private object get_4_KeyTriggerBehavior_ModifierKey1(object instance)
         {
-            var that = (global::ShortcutKey.ShortcutKeyBehavior)instance;
+            var that = (global::Behaviors.KeyTriggerBehavior)instance;
             return that.ModifierKey1;
         }
-        private void set_4_ShortcutKeyBehavior_ModifierKey1(object instance, object Value)
+        private void set_4_KeyTriggerBehavior_ModifierKey1(object instance, object Value)
         {
-            var that = (global::ShortcutKey.ShortcutKeyBehavior)instance;
+            var that = (global::Behaviors.KeyTriggerBehavior)instance;
             that.ModifierKey1 = (global::Windows.System.VirtualKey)Value;
         }
-        private object get_5_ShortcutKeyBehavior_ModifierKey2(object instance)
+        private object get_5_KeyTriggerBehavior_ModifierKey2(object instance)
         {
-            var that = (global::ShortcutKey.ShortcutKeyBehavior)instance;
+            var that = (global::Behaviors.KeyTriggerBehavior)instance;
             return that.ModifierKey2;
         }
-        private void set_5_ShortcutKeyBehavior_ModifierKey2(object instance, object Value)
+        private void set_5_KeyTriggerBehavior_ModifierKey2(object instance, object Value)
         {
-            var that = (global::ShortcutKey.ShortcutKeyBehavior)instance;
+            var that = (global::Behaviors.KeyTriggerBehavior)instance;
             that.ModifierKey2 = (global::Windows.System.VirtualKey)Value;
         }
-        private object get_6_ShortcutKeyBehavior_CommandParameter(object instance)
+        private object get_6_KeyTriggerBehavior_AssociatedObject(object instance)
         {
-            var that = (global::ShortcutKey.ShortcutKeyBehavior)instance;
+            var that = (global::Behaviors.KeyTriggerBehavior)instance;
+            return that.AssociatedObject;
+        }
+        private object get_7_EventTriggerBehavior_Actions(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.Actions;
+        }
+        private object get_8_EventTriggerBehavior_EventName(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.EventName;
+        }
+        private void set_8_EventTriggerBehavior_EventName(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            that.EventName = (global::System.String)Value;
+        }
+        private object get_9_EventTriggerBehavior_SourceObject(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.SourceObject;
+        }
+        private void set_9_EventTriggerBehavior_SourceObject(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            that.SourceObject = (global::System.Object)Value;
+        }
+        private object get_10_EventTriggerBehavior_AssociatedObject(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.AssociatedObject;
+        }
+        private object get_11_InvokeCommandAction_Command(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.Command;
+        }
+        private void set_11_InvokeCommandAction_Command(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.Command = (global::System.Windows.Input.ICommand)Value;
+        }
+        private object get_12_InvokeCommandAction_CommandParameter(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.CommandParameter;
         }
-        private void set_6_ShortcutKeyBehavior_CommandParameter(object instance, object Value)
+        private void set_12_InvokeCommandAction_CommandParameter(object instance, object Value)
         {
-            var that = (global::ShortcutKey.ShortcutKeyBehavior)instance;
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.CommandParameter = (global::System.Object)Value;
         }
-        private object get_7_ShortcutKeyBehavior_AssociatedObject(object instance)
+        private object get_13_InvokeCommandAction_InputConverter(object instance)
         {
-            var that = (global::ShortcutKey.ShortcutKeyBehavior)instance;
-            return that.AssociatedObject;
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.InputConverter;
+        }
+        private void set_13_InvokeCommandAction_InputConverter(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.InputConverter = (global::Windows.UI.Xaml.Data.IValueConverter)Value;
+        }
+        private object get_14_InvokeCommandAction_InputConverterParameter(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.InputConverterParameter;
+        }
+        private void set_14_InvokeCommandAction_InputConverterParameter(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.InputConverterParameter = (global::System.Object)Value;
+        }
+        private object get_15_InvokeCommandAction_InputConverterLanguage(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            return that.InputConverterLanguage;
+        }
+        private void set_15_InvokeCommandAction_InputConverterLanguage(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
+            that.InputConverterLanguage = (global::System.String)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -619,46 +740,101 @@ namespace ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo
                 xamlMember.Getter = get_1_Interaction_Behaviors;
                 xamlMember.Setter = set_1_Interaction_Behaviors;
                 break;
-            case "ShortcutKey.ShortcutKeyBehavior.Command":
-                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShortcutKey.ShortcutKeyBehavior");
-                xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "Command", "System.Windows.Input.ICommand");
+            case "Behaviors.KeyTriggerBehavior.Actions":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Behaviors.KeyTriggerBehavior");
+                xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_ShortcutKeyBehavior_Command;
-                xamlMember.Setter = set_2_ShortcutKeyBehavior_Command;
+                xamlMember.Getter = get_2_KeyTriggerBehavior_Actions;
+                xamlMember.SetIsReadOnly();
                 break;
-            case "ShortcutKey.ShortcutKeyBehavior.Key":
-                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShortcutKey.ShortcutKeyBehavior");
+            case "Behaviors.KeyTriggerBehavior.Key":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Behaviors.KeyTriggerBehavior");
                 xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "Key", "Windows.System.VirtualKey");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_ShortcutKeyBehavior_Key;
-                xamlMember.Setter = set_3_ShortcutKeyBehavior_Key;
+                xamlMember.Getter = get_3_KeyTriggerBehavior_Key;
+                xamlMember.Setter = set_3_KeyTriggerBehavior_Key;
                 break;
-            case "ShortcutKey.ShortcutKeyBehavior.ModifierKey1":
-                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShortcutKey.ShortcutKeyBehavior");
+            case "Behaviors.KeyTriggerBehavior.ModifierKey1":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Behaviors.KeyTriggerBehavior");
                 xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "ModifierKey1", "Windows.System.VirtualKey");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_ShortcutKeyBehavior_ModifierKey1;
-                xamlMember.Setter = set_4_ShortcutKeyBehavior_ModifierKey1;
+                xamlMember.Getter = get_4_KeyTriggerBehavior_ModifierKey1;
+                xamlMember.Setter = set_4_KeyTriggerBehavior_ModifierKey1;
                 break;
-            case "ShortcutKey.ShortcutKeyBehavior.ModifierKey2":
-                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShortcutKey.ShortcutKeyBehavior");
+            case "Behaviors.KeyTriggerBehavior.ModifierKey2":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Behaviors.KeyTriggerBehavior");
                 xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "ModifierKey2", "Windows.System.VirtualKey");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_ShortcutKeyBehavior_ModifierKey2;
-                xamlMember.Setter = set_5_ShortcutKeyBehavior_ModifierKey2;
+                xamlMember.Getter = get_5_KeyTriggerBehavior_ModifierKey2;
+                xamlMember.Setter = set_5_KeyTriggerBehavior_ModifierKey2;
                 break;
-            case "ShortcutKey.ShortcutKeyBehavior.CommandParameter":
-                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShortcutKey.ShortcutKeyBehavior");
+            case "Behaviors.KeyTriggerBehavior.AssociatedObject":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Behaviors.KeyTriggerBehavior");
+                xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
+                xamlMember.Getter = get_6_KeyTriggerBehavior_AssociatedObject;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_7_EventTriggerBehavior_Actions;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "EventName", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_8_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_8_EventTriggerBehavior_EventName;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_9_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_9_EventTriggerBehavior_SourceObject;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.AssociatedObject":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
+                xamlMember.Getter = get_10_EventTriggerBehavior_AssociatedObject;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.Command":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "Command", "System.Windows.Input.ICommand");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_11_InvokeCommandAction_Command;
+                xamlMember.Setter = set_11_InvokeCommandAction_Command;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.CommandParameter":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
                 xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "CommandParameter", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_ShortcutKeyBehavior_CommandParameter;
-                xamlMember.Setter = set_6_ShortcutKeyBehavior_CommandParameter;
+                xamlMember.Getter = get_12_InvokeCommandAction_CommandParameter;
+                xamlMember.Setter = set_12_InvokeCommandAction_CommandParameter;
                 break;
-            case "ShortcutKey.ShortcutKeyBehavior.AssociatedObject":
-                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ShortcutKey.ShortcutKeyBehavior");
-                xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_7_ShortcutKeyBehavior_AssociatedObject;
-                xamlMember.SetIsReadOnly();
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverter":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "InputConverter", "Windows.UI.Xaml.Data.IValueConverter");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_13_InvokeCommandAction_InputConverter;
+                xamlMember.Setter = set_13_InvokeCommandAction_InputConverter;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterParameter":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "InputConverterParameter", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_14_InvokeCommandAction_InputConverterParameter;
+                xamlMember.Setter = set_14_InvokeCommandAction_InputConverterParameter;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterLanguage":
+                userType = (global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::ShortcutKeyBehaviorSample.ShortcutKeyBehaviorSample_XamlTypeInfo.XamlMember(this, "InputConverterLanguage", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_15_InvokeCommandAction_InputConverterLanguage;
+                xamlMember.Setter = set_15_InvokeCommandAction_InputConverterLanguage;
                 break;
             }
             return xamlMember;

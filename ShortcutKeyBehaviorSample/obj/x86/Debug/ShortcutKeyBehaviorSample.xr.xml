@@ -2,10 +2,10 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Main" />
-    <RootPropertyPathName Name="SumCommand" />
+    <RootPropertyPathName Name="SubCommand" />
     <RootPropertyPathName Name="DivCommand" />
     <RootPropertyPathName Name="MulCommand" />
-    <RootPropertyPathName Name="SubCommand" />
+    <RootPropertyPathName Name="SumCommand" />
     <RootPropertyPathName Name="MainModel" />
     <RootPropertyPathName Name="CalcModel" />
     <RootPropertyPathName Name="Result" />
@@ -183,13 +183,20 @@
       <RootMethod Name="GetBehaviors" />
       <RootMethod Name="SetBehaviors" />
     </RootType>
-    <RootType FullName="ShortcutKey.ShortcutKeyBehavior">
-      <RootProperty Name="Command" />
+    <RootType FullName="Behaviors.KeyTriggerBehavior">
       <RootProperty Name="Key" />
+      <RootProperty Name="ModifierKey1" />
+      <RootEvent Name="OnShortcutDown" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="PrimaryCommands" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
+      <RootProperty Name="Actions" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.InvokeCommandAction">
+      <RootProperty Name="Command" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Text" />
