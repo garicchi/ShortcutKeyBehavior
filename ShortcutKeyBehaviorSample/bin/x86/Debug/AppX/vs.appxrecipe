@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-29T17:54:39.182</Modified>
+      <Modified>2015-12-30T08:52:15.837</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\bin\x86\Debug\ShortcutKeyBehaviorSample.exe">
       <PackagePath>entrypoint\ShortcutKeyBehaviorSample.exe</PackagePath>
-      <Modified>2015-12-29T17:54:37.753</Modified>
+      <Modified>2015-12-30T08:52:15.474</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -470,9 +470,9 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-12-12T10:52:24.117</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehavior\bin\x86\Debug\ShortcutKeyBehavior.dll">
+    <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehavior\bin\Debug\ShortcutKeyBehavior.dll">
       <PackagePath>ShortcutKeyBehavior.dll</PackagePath>
-      <Modified>2015-12-29T17:17:07.689</Modified>
+      <Modified>2015-12-30T08:52:13.247</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -522,11 +522,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-29T17:54:38.862</Modified>
+      <Modified>2015-12-30T08:07:42.956</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\garicchi\Projects\Repository\Windows\ShortcutKeyBehavior\ShortcutKeyBehaviorSample\bin\x86\Debug\Core\ShortcutKeyBehaviorSample.exe">
       <PackagePath>ShortcutKeyBehaviorSample.exe</PackagePath>
-      <Modified>2015-12-29T17:54:39.178</Modified>
+      <Modified>2015-12-30T08:52:15.834</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

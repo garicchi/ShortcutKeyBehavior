@@ -114,9 +114,11 @@ namespace ShortcutKey
             DependencyProperty.Register("CommandParameter", typeof(object), typeof(ShortcutKeyBehavior), new PropertyMetadata(null));
 
         private bool _isPressed;
+        private bool _isFocus;
         public ShortcutKeyBehavior()
         {
             _isPressed = false;
+            _isFocus = false;
             _pressedKeyList = PressedKeyList.GetInstance();
         }
 
@@ -130,17 +132,50 @@ namespace ShortcutKey
         public void Attach(DependencyObject associatedObject)
         {
             this.associatedObject = associatedObject;
+            var element = associatedObject as FrameworkElement;
+            element.GotFocus += Element_GotFocus;
+            element.LostFocus += Element_LostFocus;
+            element.Unloaded += Element_Unloaded;
+            element.PointerPressed += Element_PointerPressed;
             Dispatcher.AcceleratorKeyActivated += OnKeyActivated;
-            
+        }
+
+        private void Element_PointerPressed(object sender, Windows.UI.Xaml.Input.PointerRoutedEventArgs e)
+        {
+            //GridなどのElementはFocusがあたらないため
+            _isFocus = true;
+        }
+
+        private void Element_Unloaded(object sender, RoutedEventArgs e)
+        {
+            //Page遷移したときにFocusが外れないため
+            _isFocus = false;
+        }
+
+        private void Element_LostFocus(object sender, RoutedEventArgs e)
+        {
+            //フォーカスが外れたとき
+            _isFocus = false;
+        }
+
+        private void Element_GotFocus(object sender, RoutedEventArgs e)
+        {
+            //フォースがきたとき
+            _isFocus = true;
         }
 
         public void Detach()
         {
+            var element = associatedObject as FrameworkElement;
+            element.GotFocus -= Element_GotFocus;
+            element.LostFocus -= Element_LostFocus;
+            element.Unloaded -= Element_Unloaded;
+            element.PointerPressed -= Element_PointerPressed;
             this.associatedObject = null;
             Dispatcher.AcceleratorKeyActivated -= OnKeyActivated;
 
-            
         }
+ 
 
         private void OnKeyActivated(CoreDispatcher dispatcher,AcceleratorKeyEventArgs e)
         {
@@ -153,7 +188,7 @@ namespace ShortcutKey
                 _pressedKeyList.SetKeyUp(e.VirtualKey);
             }
 
-            if (e.EventType == CoreAcceleratorKeyEventType.KeyDown&&e.VirtualKey==Key&&_isPressed==false)
+            if (e.EventType == CoreAcceleratorKeyEventType.KeyDown&&e.VirtualKey==Key&&_isPressed==false&&_isFocus)
             {
                 var modi1State = Window.Current.CoreWindow.GetKeyState(ModifierKey1);
                 var modi2State = Window.Current.CoreWindow.GetKeyState(ModifierKey2);
@@ -185,25 +220,20 @@ namespace ShortcutKey
                     if (e.VirtualKey == Key)
                     {
                         CommandExecute();
-                        
                     }
                 }
                 else
                 {
-                    //それ以外(キーがnull)
-
+                    //それ以外
                 }
                 _isPressed = true;
                 
             }
-            else if (e.EventType == CoreAcceleratorKeyEventType.KeyUp&&e.VirtualKey==Key)
+            else if (e.EventType == CoreAcceleratorKeyEventType.KeyUp&&e.VirtualKey==Key&&_isFocus)
             {
                 _isPressed = false;
                 
             }
-
-            
-            
         }
 
         private void CommandExecute()
